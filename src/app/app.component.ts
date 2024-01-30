@@ -16,11 +16,11 @@ export class AppComponent {
     });
   }
 
-  onBlueprintAdded() {
-    // this.serverElements.push({
-    //   type: 'blueprint',
-    //   name: blueprintData.blueprintName,
-    //   content: blueprintData.blueprintContent,
-    // });
+  onBlueprintAdded(blueprintData: {blueprintName: string, blueprintContent: string}) {
+    this.serverElements.push({
+      type: 'blueprint',
+      name: blueprintData.blueprintName,
+      content: blueprintData.blueprintContent,
+    });
   }
 }
