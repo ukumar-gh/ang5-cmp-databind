@@ -6,7 +6,7 @@ import { Component, OnInit, EventEmitter, Output, ViewChild, ElementRef } from '
   styleUrl: './cockpit.component.css'
 })
 export class CockpitComponent {
-  @Output('srvCreated') serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
+  @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
   @Output('bpCreated') blueprintCreated = new EventEmitter<{serverName: string, serverContent: string}>();
   // newServerName = '';
   // newServerContent = '';
